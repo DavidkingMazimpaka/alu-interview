@@ -6,13 +6,16 @@ minimum operations
 
 def minOperations(n):
     """
-    returning the fewest number of operation
+    func to return the fewest op
     """
-    a = 0
-    b = 2
+    operations = 0
+    d = 2
+
     while n > 1:
-        while n % b == 0:
-            a += b
-            n = n / b
-        b += 1
-    return 
+        if n % d == 0:
+            operations += d
+            n /= d
+        else:
+            d += 1
+
+    return operations
