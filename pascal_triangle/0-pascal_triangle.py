@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-""" Return the list of lists """
+"""0-pascal_triangle.py"""
 
 
 def pascal_triangle(n):
-    """ function """
+    """Print a pascal triangle"""
     if n <= 0:
         return []
     triangle = [[1]]
@@ -13,4 +13,4 @@ def pascal_triangle(n):
             row.append(triangle[i - 1][j - 1] + triangle[i - 1][j])
         row.append(1)
         triangle.append(row)
-    return 
+    return triangle 
